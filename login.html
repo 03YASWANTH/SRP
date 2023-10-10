@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body
+        {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        *
+        {
+            margin:0;
+            padding:0;
+        }
+        .screen
+        {
+            display:flex;
+            background:radial-gradient(#fff,#ffd6d6);
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            width:100vw;
+        }
+        .in
+        {
+            height:443.52px;
+            width:406.56px;
+            background-color:#ffd6d68f;
+            border-radius:12px;
+        }
+        .insideu
+        {
+           display: flex;
+           flex-direction: column;
+           align-items:center; 
+           justify-content: space-evenly;
+           height:60%;
+        }
+       
+        input[type="text"],input[type="password"]
+        {
+          
+            width:220px;
+            height:28px;
+            border-radius:5px;
+            background-color: rgba(255, 255, 255, 0.616);
+            border-color: blueviolet;
+            border-width:1.5px;
+            outline:none;
+            border-width:0px;
+        }
+        #bb
+        {
+            width:80px;
+            height:30px; 
+            background-color: blueviolet; 
+            border-radius:5px;
+            border:none;
+            color:white;
+           
+        }
+        #bb:focus
+        {
+            border:3px solid blue;
+        }
+      
+      
+        .material-symbols-outlined 
+        {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+       .r
+       {
+        display:flex;
+        justify-content: space-between;
+        margin-left:70px;
+        margin-right:50px;
+       }
+    </style>
+  
+</head>
+<body>
+    <div class="screen">
+        <div class="in">
+            <div class="head" style="font-size:2rem;padding-top: 15px; text-align: center;"><b>Login</b></div>
+            <div class="insideu">
+                <div class="user">
+                    <div style="font-size: 1.3em; padding-bottom:5px;">Username</div>
+                    <div class="chek">
+                        <span class="material-symbols-outlined" >person</span>
+                        <input type="text" ></div>
+                    
+                </div>
+                <div class="pass" >
+                    <div style="font-size:1.3em;padding-bottom:5px;">Password</div>
+                    <div class="chek"> 
+                        <span class="material-symbols-outlined" >lock</span>
+                        <input type="password">
+                    </div>
+                </div>
+            </div>
+            <div class="r">
+                    <label><input type="checkbox" >Remember me</label>
+                    <a href="#">forgot password?</a>
+                </div>
+            <div style="display: flex; justify-content: center; margin-top: 20px;">
+                <button id="bb">login</button>
+            </div>
+            <div style="text-align: center;">Don't have an account?<a href="register.htm">Register</a></div>
+        </div>
+    </div>
+</body>
+</html>
